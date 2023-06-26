@@ -1,0 +1,29 @@
+#Write a script to input 5 dna sequences . join sequences using ";". convert joined string to a list and perform following operations like:split, reverse, insert, pop, sort
+
+dna = []                           
+for i in range(0,5):
+    seq=input("Enter sequence : ").upper()
+    dna.append(seq)                 
+#print(dna) 
+
+#to join
+new=";".join(dna)
+print("DNA: ",new)
+
+#To split
+lt=new.split(";")
+print("The split sequence: ",lt)
+
+#reversed
+lt.reverse()
+print("The reversed sequence: ",lt)
+
+#pop
+print("The popped array sequence: ", lt.pop())
+
+#sort
+lt.sort()
+print("The sorted sequence: ", lt)
+
+#insert
+print("The inserted sequence: ", lt.insert(2, "*"))
